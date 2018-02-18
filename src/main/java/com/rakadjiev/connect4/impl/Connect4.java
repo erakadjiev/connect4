@@ -93,7 +93,7 @@ public class Connect4 implements IConnect4 {
 					try {
 						// Execute the move
 						insertDisc(currentPlayer, col);
-					} catch (InvalidInsertException e) {
+					} catch (InvalidInsertException | InvalidLocationException e) {
 						// If the move was invalid, print the reason, and let the player try again
 						System.err.println("Invalid move: " + e.getMessage());
 						continue;
