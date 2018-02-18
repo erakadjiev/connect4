@@ -1,11 +1,12 @@
-package com.rakadjiev.connect4;
+package com.rakadjiev.connect4.impl;
+
+import com.rakadjiev.connect4.IPlayer;
 
 /**
- * A Connect4 player, who has a name and a disc color.
- * 
+ * @see IPlayer
  * @author rakadjiev
  */
-public class Player {
+public class Player implements IPlayer {
 
 	/** The name of the player */
 	private final String name;
@@ -23,20 +24,12 @@ public class Player {
 		this.disc = disc;
 	}
 	
-	/**
-	 * Returns the name of the player.
-	 * 
-	 * @return The name of the player
-	 */
+	@Override
 	public String getName() {
 		return name;
 	}
 	
-	/**
-	 * Returns the disc color of the player.
-	 * 
-	 * @return The disc color of the player
-	 */
+	@Override
 	public char getDisc() {
 		return disc;
 	}

@@ -5,6 +5,9 @@
   <version>1.0-SNAPSHOT</version>
   <name>Connect4</name>
   <description>Connect4 game</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <build>
     <plugins>
       <plugin>

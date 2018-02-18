@@ -1,4 +1,9 @@
-/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/Player.java
-/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/Connect4.java
-/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/Board.java
-/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/InvalidInsertException.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/IBoard.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/exceptions/InvalidLocationException.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/exceptions/InvalidPlayerException.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/impl/Board.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/impl/Player.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/IPlayer.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/IConnect4.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/exceptions/InvalidInsertException.java
+/home/rakadjiev/workspace/com.rakadjiev.connect4/src/main/java/com/rakadjiev/connect4/impl/Connect4.java
