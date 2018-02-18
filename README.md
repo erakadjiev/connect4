@@ -19,4 +19,4 @@ Java 8 or higher is required.
 The game consists of a board and players, who take turns in inserting discs into columns of the board. Each player has a specific disc color they play with.\
 The discs are inserted from the top of the board, and fall to the first empty space in the column.\
 The game ends if one of the players connects the required number of their own discs, or if the board fills up.\
-In the standard version, there are 2 players, the board has 7 columns and 6 rows, and t least 4 connected discs are required to win. 
+In the standard version, there are 2 players, the board has 7 columns and 6 rows, and at least 4 connected discs are required to win. 
