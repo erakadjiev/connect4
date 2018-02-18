@@ -6,12 +6,14 @@ It can be run interactively via the command-line, or used programmatically.
 
 ## Build & Run
 To build and run the game, call:
+
 ```
 mvn package
 java -cp target/com.rakadjiev.connect4-1.0-SNAPSHOT.jar com.rakadjiev.connect4.impl.Connect4
 ```
 
 The only dependency is JUnit for the tests.
+Java 8 or higher is required.
 
 ## Play
 The game consists of a board and players, who take turns in inserting discs into columns of the board. Each player has a specific disc color they play with.\
