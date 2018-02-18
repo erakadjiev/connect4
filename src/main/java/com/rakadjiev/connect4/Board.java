@@ -17,7 +17,7 @@ public class Board {
 	/** The number of rows the board has */
 	public static final int ROWS = 6;
 	/** The number of connected discs required to win */
-	private static final int DISCS_TO_WIN = 4;
+	public static final int DISCS_TO_WIN = 4;
 	
 	/** The value representing an empty space in the board (default value of char) */
 	private static final char NO_DISC = '\0';
