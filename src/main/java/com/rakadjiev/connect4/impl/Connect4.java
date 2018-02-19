@@ -37,8 +37,12 @@ public class Connect4 implements IConnect4 {
 	 * 
 	 * @param playerOne The first player
 	 * @param playerTwo The second player
+	 * @throws NullPointerException If playerOne or playerTwo is null
 	 */
-	public Connect4(final IPlayer playerOne, final IPlayer playerTwo) {
+	public Connect4(final IPlayer playerOne, final IPlayer playerTwo) throws NullPointerException {
+		if (playerOne == null || playerTwo == null) {
+			throw new NullPointerException("Players must not be null.");
+		}
 		this.board = new Board();
 		this.players = new IPlayer[]{playerOne, playerTwo};
 	}

@@ -18,8 +18,12 @@ public class Player implements IPlayer {
 	 * 
 	 * @param name The name of the player
 	 * @param disc The disc color of the player
+	 * @throws NullPointerException If name is null
 	 */
-	public Player(final String name, final char disc) {
+	public Player(final String name, final char disc) throws NullPointerException {
+		if (name == null) {
+			throw new NullPointerException("Name must not be null.");
+		}
 		this.name = name;
 		this.disc = disc;
 	}

@@ -45,6 +45,28 @@ public class Connect4Test {
 	}
 	
 	/**
+	 * Test that the a NullPointerException is thrown if any of the players are null
+	 */
+	@Test
+	public void testPlayerNull() {
+		try {
+			new Connect4(null, null);
+			fail("Creating a Connect4 game with null players should result in a NullPointerException.");
+		} catch (NullPointerException e) {
+		}
+		try {
+			new Connect4(playerOne, null);
+			fail("Creating a Connect4 game with null players should result in a NullPointerException.");
+		} catch (NullPointerException e) {
+		}
+		try {
+			new Connect4(null, playerTwo);
+			fail("Creating a Connect4 game with null players should result in a NullPointerException.");
+		} catch (NullPointerException e) {
+		}
+	}
+	
+	/**
 	 * Test if a winning move is recognized correctly
 	 */
 	@Test
@@ -135,6 +157,28 @@ public class Connect4Test {
 			assertEquals("Cell should contain the same disc as the one inserted", board.getDisc(1, 1), playerOne.getDisc());
 		} catch (InvalidInsertException | InvalidLocationException e) {
 			fail("Inserting a disc should not result in an exception");
+		}
+	}
+	
+	/**
+	 * Test disc insertion for player with invalid disc
+	 */
+	@Test
+	public void testInsertDiscInvalidPlayer() {
+		Player playerInvalid1 = new Player("INVALID", '\0');
+		Player playerInvalid2 = new Player("INVALID", '\u0002');
+		Connect4 game = new Connect4(playerInvalid1, playerInvalid2);
+		try {
+			game.insertDisc(playerInvalid1, 1);
+			fail("A move of a player with an invalid disc should result in an exception");
+		} catch (InvalidInsertException e) {
+			assertTrue("A move of a player with an invalid disc should result in a corresponding exception", e.getMessage().contains("Invalid disc"));
+		}
+		try {
+			game.insertDisc(playerInvalid2, 1);
+			fail("A move of a player with an invalid disc should result in an exception");
+		} catch (InvalidInsertException e) {
+			assertTrue("A move of a player with an invalid disc should result in a corresponding exception", e.getMessage().contains("Invalid disc"));
 		}
 	}
 	
